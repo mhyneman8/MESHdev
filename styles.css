@@ -23,8 +23,10 @@ body {
     color: #ffcb9a;
     font-size: 70px;
     text-align: center;
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
+    z-index: 1;
     margin-bottom: 30px;
     padding-top: 200px;
     animation-duration: 3s;
@@ -122,4 +124,21 @@ p {
     text-align: center;
     margin: 10px auto;
     padding: 20px;
+}
+
+.logos-container {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.logos {
+    /* flex: 1; */
+    margin-top: 15px;
+    /* justify-content: space-between; */
+    /* margin-left: 25px; */
+    width: auto;
+    height: 50px;
 }
