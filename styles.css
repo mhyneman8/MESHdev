@@ -14,8 +14,9 @@ body {
     background: -webkit-linear-gradient(-45deg, #2C3531 0%, #116466 100%);
     background: linear-gradient(135deg, #2C3531 0%, #116466 100%);
     height: 100vh;
-    width: 96vw;
+    width: 98vw;
     text-align: center;
+    margin: 0 auto;
 }
 
 .title {
@@ -70,37 +71,53 @@ h2 {
 
 .sub-headings {
     color: #d9b08c;
-    font-size: 40px;
-    
+    font-size: 50px;
+    padding-top: 100px;
+    -webkit-text-stroke: 0.5px #ffcb9a;
 }
 
 .who-section {
-    width: 96vw;
+    /* width: 96vw;
+    height: 100vh; */
     background: #116466;
     background: -moz-linear-gradient(top, #116466 0%, #D9B08C 100%);
     background: -webkit-linear-gradient(top, #116466 0%, #D9B08C 100%);
     background: linear-gradient(to bottom, #116466 0%, #D9B08C 100%);
-    margin-top: 0;
-    border-top: 3px solid #2c3531;
+    /* margin-top: 0;
+    border-top: 3px solid #2c3531; */
 }
 
 .what-section {
-    width: 96vw;
     background: #116466;
     background: -moz-linear-gradient(45deg, #116466 0%, #d9b08c 100%);
     background: -webkit-linear-gradient(45deg, #116466 0%, #d9b08c 100%);
     background: linear-gradient(45deg, #116466 0%, #d9b08c 100%);
-    margin-top: 0;
+}
+
+.what-section,
+.who-section {
+    width: 96vw;
+    max-width: 1000px;
+    height: 100vh;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contact-section {
+    padding-bottom: 40px;
 }
 
 p {
+    padding-top: 40px;
     color: #2c3531;
     text-align: left;
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 1.8;
 }
 
 .sub-content {
-    width: 400px;
+    width: 70%;
+    max-width: 800px;
     text-align: center;
     margin: 10px auto;
     padding: 20px;
