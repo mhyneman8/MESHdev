@@ -4,15 +4,21 @@ beige #d9b08c
 peach #ffcb9a
 sky blue #d1e8e2 */
 
-body {
-    background-color: #116466;
-}
+/* @font-face { font-family: Futura; src: url(futura.otf); } */
 
-.main-page {
+body {
+    font-family: 'Futura', sans-serif;
+    font-weight: 400;
+}
+.background {
     background: #2C3531;
     background: -moz-linear-gradient(-45deg, #2C3531 0%, #116466 100%);
     background: -webkit-linear-gradient(-45deg, #2C3531 0%, #116466 100%);
     background: linear-gradient(135deg, #2C3531 0%, #116466 100%);
+}
+
+.main-page {
+
     height: 100vh;
     width: 98vw;
     text-align: center;
@@ -23,12 +29,14 @@ body {
     color: #ffcb9a;
     font-size: 70px;
     text-align: center;
+    /* border-bottom: 2px solid #c7f5e0; */
     position: -webkit-sticky;
     position: sticky;
-    top: 0;
+    float: initial;
+    top: 110px;
     z-index: 1;
     margin-bottom: 30px;
-    padding-top: 200px;
+    padding-top: 50px;
     animation-duration: 3s;
     animation-name: slidein;
 }
@@ -48,10 +56,42 @@ body {
         width: 100%;
     }
 }
- 
+
+.center {
+    text-align: center;
+}
+.mesh-logo {
+    width: 146px;
+    height: auto;
+    position: fixed;
+    left: 61px;
+    top: 30px;
+    animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+
+    5% {
+        opacity: 0;
+    }
+}
+
+.subtitle {
+    min-height: 50vh;
+    /* background: #2C3531;
+    background: -moz-linear-gradient(-45deg, #2C3531 0%, #116466 100%);
+    background: -webkit-linear-gradient(-45deg, #2C3531 0%, #116466 100%);
+    background: linear-gradient(135deg, #2C3531 0%, #116466 100%); */
+}
+
 h2 {
     color: #d1e8e2;
     font-size: 30px;
+    padding-top: 200px;
+    text-align: center;
     animation-duration: 4s;
     animation-name: slideup;
 }
@@ -81,19 +121,19 @@ h2 {
 .who-section {
     /* width: 96vw;
     height: 100vh; */
-    background: #116466;
+    /* background: #116466;
     background: -moz-linear-gradient(top, #116466 0%, #D9B08C 100%);
     background: -webkit-linear-gradient(top, #116466 0%, #D9B08C 100%);
-    background: linear-gradient(to bottom, #116466 0%, #D9B08C 100%);
+    background: linear-gradient(to bottom, #116466 0%, #D9B08C 100%); */
     /* margin-top: 0;
     border-top: 3px solid #2c3531; */
 }
 
 .what-section {
-    background: #116466;
+    /* background: #116466;
     background: -moz-linear-gradient(45deg, #116466 0%, #d9b08c 100%);
     background: -webkit-linear-gradient(45deg, #116466 0%, #d9b08c 100%);
-    background: linear-gradient(45deg, #116466 0%, #d9b08c 100%);
+    background: linear-gradient(45deg, #116466 0%, #d9b08c 100%); */
 }
 
 .what-section,
