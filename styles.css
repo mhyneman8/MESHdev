@@ -7,7 +7,7 @@ sky blue #d1e8e2 */
 /* @font-face { font-family: Futura; src: url(futura.otf); } */
 
 body {
-    font-family: 'Futura', sans-serif;
+    font-family: Futura, Futura-Medium, "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
     font-weight: 400;
 }
 .background {
@@ -74,7 +74,7 @@ body {
         opacity: 1;
     }
 
-    5% {
+    50% {
         opacity: 0;
     }
 }
@@ -118,18 +118,45 @@ h2 {
     -webkit-text-stroke: 0.5px #ffcb9a;
 }
 
+.flip-up {
+    animation-name: flip-up;
+    animation-duration: 2s;
+}
+@keyframes flip-up {
+    0%, 100% {
+        transform: rotateX(0);
+    }
+    50% {
+        transform: rotateX(150deg);
+    } 
+}
+.larger {
+    animation-name: larger;
+    animation-duration: 2s;
+}
+
+@keyframes larger {
+    0%, 100% {
+        font-size: 50px;
+    }
+    50% {
+        font-size: 75px;
+    }
+}
 .who-section {
-    /* width: 96vw;
-    height: 100vh; */
+    width: 96vw;
+    height: 100vh;
     /* background: #116466;
     background: -moz-linear-gradient(top, #116466 0%, #D9B08C 100%);
     background: -webkit-linear-gradient(top, #116466 0%, #D9B08C 100%);
     background: linear-gradient(to bottom, #116466 0%, #D9B08C 100%); */
-    /* margin-top: 0;
-    border-top: 3px solid #2c3531; */
+    margin-top: 0;
+    border-top: 3px solid #2c3531; 
+    z-index: 2;
 }
 
 .what-section {
+    z-index: 2;
     /* background: #116466;
     background: -moz-linear-gradient(45deg, #116466 0%, #d9b08c 100%);
     background: -webkit-linear-gradient(45deg, #116466 0%, #d9b08c 100%);
