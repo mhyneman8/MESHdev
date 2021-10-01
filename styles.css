@@ -250,6 +250,10 @@ p {
     font-size: 20px;
 }
 
+.button:hover {
+    opacity: 0.6;
+}
+
 form {
     margin-bottom: 25px;
 @media (max-width: 590px) {
