@@ -18,7 +18,6 @@ body {
 }
 
 .main-page {
-
     height: 100vh;
     width: 98vw;
     text-align: center;
@@ -27,6 +26,7 @@ body {
 
 .title {
     color: #ffcb9a;
+    /* height: 50vh; */
     font-size: 70px;
     text-align: center;
     /* border-bottom: 2px solid #c7f5e0; */
@@ -80,7 +80,7 @@ body {
 }
 
 .subtitle {
-    min-height: 50vh;
+    /* min-height: 50vh; */
     /* background: #2C3531;
     background: -moz-linear-gradient(-45deg, #2C3531 0%, #116466 100%);
     background: -webkit-linear-gradient(-45deg, #2C3531 0%, #116466 100%);
@@ -116,6 +116,13 @@ h2 {
     font-size: 50px;
     padding-top: 100px;
     -webkit-text-stroke: 0.5px #ffcb9a;
+}
+
+.contact-heading {
+    color: #d9b08c;
+    font-size: 50px;
+    -webkit-text-stroke: 0.5px #ffcb9a;
+    margin: 5px;
 }
 
 .flip-up {
@@ -208,4 +215,37 @@ p {
     /* margin-left: 25px; */
     width: auto;
     height: 50px;
+}
+
+.contact-section {
+   
+    text-align: center;
+    background-color: #d1e8e2;
+    width: 500px;
+    /* height: 300px; */
+    margin: 35px auto;
+    padding: 30px;
+    border: 2px solid #2c3531;
+    display: block
+}
+
+.input {
+    display: block;
+    margin: 5px auto;
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 4px;
+}
+
+.button {
+    width: 110px;
+    height: 40px;
+    background-color: #ffcb9a;
+    color: #2c3531;
+    margin-top: 10px; 
+    font-size: 20px;
+}
+
+form {
+    margin-bottom: 25px;
 }
