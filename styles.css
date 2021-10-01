@@ -96,6 +96,7 @@ h2 {
     animation-duration: 4s;
     animation-name: slideup;
 }
+
 @keyframes slideup {
     from {
         margin-top: 100%;
@@ -222,13 +223,14 @@ p {
 }
 
 .contact-section {
-   
     text-align: center;
     background-color: #d1e8e2;
-    width: 500px;
+    width: 95%;
+    margin: auto;
+    /* width: 500px; */
     /* height: 300px; */
-    margin: 35px auto;
-    padding: 30px;
+    /* margin: 35px auto;
+    padding: 30px; */
     border: 2px solid #2c3531;
     display: block
 }
@@ -239,6 +241,11 @@ p {
     font-size: 20px;
     margin-top: 30px;
     padding: 4px;
+    font: inherit;
+  }
+  
+  .message {
+  height: 100px;
 }
 
 .button {
@@ -250,34 +257,30 @@ p {
     font-size: 20px;
 }
 
-.button:hover {
-    opacity: 0.6;
-}
+form { margin-bottom: 25px; }
 
-form {
-    margin-bottom: 25px;
 @media (max-width: 590px) {
   .title { font-size: 50; }
-  .subtitle { font-size: 22;}
-  .sub-headings { font-size: 30;}
-  .flip-up { font-size: 20;}
+  .subtitle { font-size: 22; }
+  .sub-headings { font-size: 30; }
+  .flip-up { font-size: 20; }
 }
 
 @media (max-width: 490px) {
   .title { font-size: 45; }
-  .subtitle { font-size: 20;}
-  .sub-headings { font-size: 28;}
-  .flip-up { font-size: 16;}
+  .subtitle { font-size: 20; }
+  .sub-headings { font-size: 28; }
+  .flip-up { font-size: 16; }
 }
 
 @media (max-width: 390px) {
   .title { font-size: 35; }
-  .subtitle { font-size: 16;}
-  .sub-headings { font-size: 22;}
-  .flip-up { font-size: 14;}
+  .subtitle { font-size: 16; }
+  .sub-headings { font-size: 22; }
+  .flip-up { font-size: 14; }
 }
 
 @media (max-width: 290px) {
   .title { font-size: 20; }
-  .subtitle { font-size: 10;}
+  .subtitle { font-size: 10; }
 }
