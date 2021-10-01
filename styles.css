@@ -7,8 +7,9 @@ sky blue #d1e8e2 */
 /* @font-face { font-family: Futura; src: url(futura.otf); } */
 
 body {
-    font-family: Futura, Futura-Medium, "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
-    font-weight: 400;
+  font-family: 'Spartan', sans-serif;
+    /* font-family: Futura, Futura-Medium, "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif; */
+    font-weight: 200;
 }
 .background {
     background: #2C3531;
@@ -42,8 +43,8 @@ body {
 }
 
 @keyframes slidein {
-    from {
-        /* margin-left: 100%; */
+    from { 
+              /* margin-left: 100%; */
         width: 300%;
     }
     75% {
@@ -129,6 +130,7 @@ h2 {
     animation-name: flip-up;
     animation-duration: 2s;
 }
+
 @keyframes flip-up {
     0%, 100% {
         transform: rotateX(0);
@@ -137,6 +139,7 @@ h2 {
         transform: rotateX(150deg);
     } 
 }
+
 .larger {
     animation-name: larger;
     animation-duration: 2s;
@@ -150,6 +153,7 @@ h2 {
         font-size: 75px;
     }
 }
+
 .who-section {
     width: 96vw;
     height: 100vh;
@@ -248,4 +252,28 @@ p {
 
 form {
     margin-bottom: 25px;
+@media (max-width: 590px) {
+  .title { font-size: 50; }
+  .subtitle { font-size: 22;}
+  .sub-headings { font-size: 30;}
+  .flip-up { font-size: 20;}
+}
+
+@media (max-width: 490px) {
+  .title { font-size: 45; }
+  .subtitle { font-size: 20;}
+  .sub-headings { font-size: 28;}
+  .flip-up { font-size: 16;}
+}
+
+@media (max-width: 390px) {
+  .title { font-size: 35; }
+  .subtitle { font-size: 16;}
+  .sub-headings { font-size: 22;}
+  .flip-up { font-size: 14;}
+}
+
+@media (max-width: 290px) {
+  .title { font-size: 20; }
+  .subtitle { font-size: 10;}
 }
