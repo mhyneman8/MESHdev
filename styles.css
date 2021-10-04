@@ -16,6 +16,7 @@ body {
     background: -moz-linear-gradient(-45deg, #2C3531 0%, #116466 100%);
     background: -webkit-linear-gradient(-45deg, #2C3531 0%, #116466 100%);
     background: linear-gradient(135deg, #2C3531 0%, #116466 100%);
+    flex: 1;
 }
 
 .main-page {
@@ -65,7 +66,7 @@ body {
     width: 146px;
     height: auto;
     position: fixed;
-    left: 61px;
+    left: 31px;
     top: 30px;
     animation: pulse 5s infinite;
 }
@@ -74,7 +75,6 @@ body {
     0%, 100% {
         opacity: 1;
     }
-
     50% {
         opacity: 0;
     }
@@ -125,6 +125,7 @@ h2 {
     font-size: 50px;
     -webkit-text-stroke: 0.5px #ffcb9a;
     margin: 5px;
+    margin-top: 35px;
 }
 
 .flip-up {
@@ -179,7 +180,7 @@ h2 {
 .who-section {
     width: 96vw;
     max-width: 1000px;
-    height: 100vh;
+    height: auto;
     text-align: center;
     margin: 0 auto;
 }
@@ -188,13 +189,13 @@ h2 {
     padding-bottom: 40px;
 }
 
-p {
+.para {
     padding-top: 40px;
     color: #d1e8e2;
     text-align: left;
     font-size: 25px;
     line-height: 1.8;
-
+    font-weight: 500;
 }
 
 .sub-content {
@@ -208,9 +209,10 @@ p {
 .logos-container {
     display: flex;
     justify-content: space-between;
-    width: 200px;
+    width: 141px;
     text-align: center;
     margin: 10px auto;
+    /* display: block; */
 }
 
 .logos {
@@ -263,21 +265,26 @@ form { margin-bottom: 25px; }
   .title { font-size: 50; }
   .subtitle { font-size: 22; }
   .sub-headings { font-size: 30; }
-  .flip-up { font-size: 20; }
+  .para { font-size: 20; }
+  .mesh-logo {
+      width: 93px;
+      left: 18px;
+      top: 22px;
+  }
 }
 
 @media (max-width: 490px) {
   .title { font-size: 45; }
   .subtitle { font-size: 20; }
   .sub-headings { font-size: 28; }
-  .flip-up { font-size: 16; }
+  .para { font-size: 16; }
 }
 
 @media (max-width: 390px) {
   .title { font-size: 35; }
   .subtitle { font-size: 16; }
   .sub-headings { font-size: 22; }
-  .flip-up { font-size: 14; }
+  .para { font-size: 14; }
 }
 
 @media (max-width: 290px) {
