@@ -1,5 +1,5 @@
 // create observer
-const observer = new IntersectionObserver(entries => {
+// const observer = new IntersectionObserver(entries => {
 //     // loop over the entries
 //     entries.forEach(entry => {
 //         if (entry.isIntersection) {
